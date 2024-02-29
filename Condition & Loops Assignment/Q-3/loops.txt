@@ -1,0 +1,82 @@
+Q3. What are loops, and what do we need them? Explain different types of loops with their syntax and examples.
+
+    What are Loops?
+Loops are fundamental programming constructs that allow you to repeat a block of code multiple times. 
+They streamline your code by saving you from writing the same instructions repeatedly, making your programs more efficient and easier to manage.
+
+
+    Need Loops :
+Automation of Repetitive Tasks
+Iterating Over Collections
+Conditional Execution
+
+    Types of Loops : 
+1.For Loops : The loop runs as long as this condition evaluates to true.
+        Syntax : for (initialization; condition; increment/decrement) {
+                            // code to be executed repeatedly
+                        } 
+        Example: for (let i = 0; i < 5; i++) {
+                        console.log("Iteration number: " + i);
+                    }
+
+
+2. while loop : The loop keeps running as long as the condition remains true.  It's essential to ensure the condition will eventually become false to avoid an infinite loo
+        Syntax : while (condition) {
+                // code to be executed repeatedly
+                }
+        Example : let count = 0;
+                    while (count < 10) {
+                    console.log("Count is: " + count);
+                    count++;
+                }
+                
+
+3. do...while loop : his loop is similar to the while loop, but the difference is that the code block is guaranteed to execute at least once before the condition is checked.
+        Syntax : do {
+                // code to be executed repeatedly
+                } while (condition);
+        Example:    let i = 0;
+                    do {
+                        console.log("Number: " + i);
+                        i++;
+                    } while (i < 5);
+
+                    
+4. for...in loop : Primarily used to iterate over the properties of an object. The variable key holds the name of the property in each iteration.
+        Syntax : for (key in object) {
+                // code to be executed for each property
+                 }
+        Example: onst person = { name: "Alice", age: 30, city: "New York" };
+                for (const prop in person) {
+                    console.log(prop + ": " + person[prop]); 
+                }
+
+
+5. for...of loop : Designed to iterate over iterable objects like arrays, strings, and more. The variable value holds the current element from the iterable object in each iteration.
+        Syntax : for (value of iterable) {
+                    // code to be executed for each element
+                }
+        Example : const numbers = [1, 5, 3, 8];
+                for (const num of numbers) {
+                    console.log(num);
+                }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
